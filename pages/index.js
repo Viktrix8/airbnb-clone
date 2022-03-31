@@ -33,7 +33,7 @@ const Home = ({ exploreData, cardsData }) => {
           <h2 className='text-4xl font-semibold py-8'>Live Anywhere</h2>
           <div className='flex overflow-x-scroll space-x-3 scrollbar-hide p-3'>
             {cardsData.map((item, index) => (
-              <MediumCard img={item.img} title={item.title} />
+              <MediumCard img={item.img} title={item.title} key={index} />
             ))}
           </div>
         </section>
